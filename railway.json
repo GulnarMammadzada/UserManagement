@@ -5,8 +5,6 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "java -jar app.jar",
-    "healthcheckPath": "/api/v1/health",
     "restartPolicyType": "ON_FAILURE"
   }
 }
