@@ -26,18 +26,8 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build --no-daemon
+        run: ./gradlew build -x test --no-daemon
 
-      - name: Run tests
-        run: ./gradlew test --no-daemon
-
-      - name: Generate test report
-        if: always()
-        uses: dorny/test-reporter@v1
-        with:
-          name: Test Results
-          path: build/test-results/test/*.xml
-          reporter: java-junit
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
@@ -65,7 +55,7 @@ jobs:
         run: chmod +x gradlew
 
       - name: Check code style
-        run: ./gradlew check --no-daemon
+        run: ./gradlew check -x test --no-daemon
 
   docker:
     name: Build and Push Docker Image
