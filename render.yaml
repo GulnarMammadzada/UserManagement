@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: user-management-service
+    env: docker
+    region: oregon
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_USERNAME
+        sync: false
+      - key: DATABASE_PASSWORD
+        sync: false
+      - key: KAFKA_BOOTSTRAP_SERVERS
+        fromService:
+          type: pserv
+          name: kafka
+          property: host
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+    healthCheckPath: /api/v1/health
+
+  - type: pserv
+    name: postgres-db
+    env: docker
+    plan: free
+    dockerfilePath: postgres
+    dockerContext: .
+    disk:
+      name: postgres-data
+      mountPath: /var/lib/postgresql/data
+      sizeGB: 1
+    envVars:
+      - key: POSTGRES_DB
+        value: usermanagement
+      - key: POSTGRES_USER
+        generateValue: true
+      - key: POSTGRES_PASSWORD
+        generateValue: true
+
+databases:
+  - name: user-management-db
+    databaseName: usermanagement
+    user: postgres
+    plan: free

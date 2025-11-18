@@ -1,0 +1,12 @@
+INSERT INTO users (first_name, last_name, email, phone, address, city, country, postal_code, role, status, bio, avatar_url, created_at, updated_at)
+VALUES
+    ('John', 'Doe', 'john.doe@example.com', '+1234567890', '123 Main St', 'New York', 'USA', '10001', 'ADMIN', 'ACTIVE', 'System Administrator', 'https://i.pravatar.cc/150?img=1', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Jane', 'Smith', 'jane.smith@example.com', '+1234567891', '456 Oak Ave', 'Los Angeles', 'USA', '90001', 'MANAGER', 'ACTIVE', 'Department Manager', 'https://i.pravatar.cc/150?img=2', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Bob', 'Johnson', 'bob.johnson@example.com', '+1234567892', '789 Pine Rd', 'Chicago', 'USA', '60601', 'USER', 'ACTIVE', 'Regular User', 'https://i.pravatar.cc/150?img=3', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Alice', 'Williams', 'alice.williams@example.com', '+1234567893', '321 Elm St', 'Houston', 'USA', '77001', 'DEVELOPER', 'ACTIVE', 'Senior Developer', 'https://i.pravatar.cc/150?img=4', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Charlie', 'Brown', 'charlie.brown@example.com', '+1234567894', '654 Maple Dr', 'Phoenix', 'USA', '85001', 'ANALYST', 'ACTIVE', 'Data Analyst', 'https://i.pravatar.cc/150?img=5', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('David', 'Miller', 'david.miller@example.com', '+1234567895', '987 Birch Ln', 'Philadelphia', 'USA', '19101', 'USER', 'INACTIVE', 'Inactive User', 'https://i.pravatar.cc/150?img=6', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Emma', 'Davis', 'emma.davis@example.com', '+1234567896', '159 Cedar Ct', 'San Antonio', 'USA', '78201', 'MANAGER', 'SUSPENDED', 'Suspended Manager', 'https://i.pravatar.cc/150?img=7', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Frank', 'Garcia', 'frank.garcia@example.com', '+1234567897', '753 Spruce Way', 'San Diego', 'USA', '92101', 'USER', 'PENDING', 'Pending Approval', 'https://i.pravatar.cc/150?img=8', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Grace', 'Martinez', 'grace.martinez@example.com', '+1234567898', '852 Willow Pl', 'Dallas', 'USA', '75201', 'DEVELOPER', 'ACTIVE', 'Full Stack Developer', 'https://i.pravatar.cc/150?img=9', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+    ('Henry', 'Rodriguez', 'henry.rodriguez@example.com', '+1234567899', '951 Ash Blvd', 'San Jose', 'USA', '95101', 'GUEST', 'ACTIVE', 'Guest User', 'https://i.pravatar.cc/150?img=10', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
