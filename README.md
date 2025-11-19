@@ -2,7 +2,7 @@
 
 A comprehensive, production-ready RESTful API service for managing users, built with Spring Boot 3, PostgreSQL, Kafka, and Docker.
 
-[![CI/CD Pipeline](https://github.com/yourusername/UserManagement/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/yourusername/UserManagement/actions)
+[![CI/CD Pipeline](https://github.com/GulnarMammadzada/UserManagement/workflows/CI/CD%20Pipeline/badge.svg)](https://github.com/GulnarMammadzada/UserManagement/actions)
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.7-brightgreen.svg)](https://spring.io/projects/spring-boot)
 
@@ -94,7 +94,7 @@ src/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/UserManagement.git
+git clone https://github.com/GulnarMammadzada/UserManagement.git
 cd UserManagement
 ```
 
@@ -404,11 +404,11 @@ The project includes:
 ### Deployed URL
 The application is deployed and accessible at:
 
-**Live API**: [https://your-deployed-url.com](https://your-deployed-url.com)
+**Live API**: [https://user-management-service-production-9665.up.railway.app](https://user-management-service-production-9665.up.railway.app)
 
-**Health Check**: [https://your-deployed-url.com/api/v1/health](https://your-deployed-url.com/api/v1/health)
+**Health Check**: [https://user-management-service-production-9665.up.railway.app/api/v1/health](https://user-management-service-production-9665.up.railway.app/api/v1/health)
 
-**API Documentation**: [https://your-deployed-url.com/swagger-ui.html](https://your-deployed-url.com/swagger-ui.html)
+**API Documentation**: [https://user-management-service-production-9665.up.railway.app/swagger-ui.html](https://user-management-service-production-9665.up.railway.app/swagger-ui.html)
 
 ### Deployment Options
 
@@ -427,8 +427,8 @@ railway up
 
 #### 3. Docker Hub
 ```bash
-docker build -t yourusername/user-management:latest .
-docker push yourusername/user-management:latest
+docker build -t GulnarMammadzada/user-management:latest .
+docker push GulnarMammadzada/user-management:latest
 ```
 
 #### 4. Kubernetes
@@ -497,7 +497,7 @@ kubectl apply -f .
 
 ## Contact
 
-Project Link: [https://github.com/yourusername/UserManagement](https://github.com/yourusername/UserManagement)
+Project Link: [https://github.com/GulnarMammadzada/UserManagement](https://github.com/GulnarMammadzada/UserManagement)
 
 ---
 
